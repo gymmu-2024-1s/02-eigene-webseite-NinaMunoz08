@@ -12,6 +12,7 @@
     </head>
     <style>
     body {background-color:burlywood}
+
     </style>
     <body>
         <header>
@@ -19,7 +20,7 @@
             Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
             ganz oben angezeigt wird, braucht es noch das richtige CSS dafür. -->
             <h1 style="font-family:'Trebuchet MS';  color:rgb(8, 49, 234); font-size: 60px;">Webseite von Nina</h1>
-
+            <!-- Im header kann die Schriftart, die Farbe, die Schriftgrösse spezifiziert werden. -->
             </h1>
         </header>
 
@@ -90,11 +91,24 @@
                     </div>
                 </div>
             </section>
+        
         </main>
 
+        <svg width="300" height="300">
+            <rect x="100" y="100" width="100" height="100"  fill="Blue"/>
+            
+    <path id="circle-motion" d="M 50 150 L 250 150 L 150 50 L 100 50 Z" stroke="none" fill="none" />
+    <circle r="40" fill="red">
+      <animateMotion dur="5s" repeatCount="indefinite">
+        <mpath xlink:href="#circle-motion"/>
+      </animateMotion>
+    </circle>
+
+        </svg>
         <footer>
             <!-- Hier kommt die Fusszeile der Webseite -->
              Copyright 2024 Nina Munoz
         </footer>
+    
     </body>
 </html>
