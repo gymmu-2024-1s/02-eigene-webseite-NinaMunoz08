@@ -5,14 +5,13 @@
 }
 
 /* Hier können Stiele für die ganze Webseite angegeben werden. */
+/* Comment Nina: Anpassen der Margins der Webseite. Einfügen eines Rahmens mit Strichstärke, Strichart und Farbe. */
 body {
     margin-top: 100px;
     margin-bottom: 90px;
     margin-left: 50px;
     margin-right: 50px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(241, 22, 212);
+    border: 2px solid rgb(241, 22, 212);
     background-color: burlywood;
 }
 
@@ -38,6 +37,7 @@ body {
     width: 100%; /* Braucht es damit das Bild im Container bleibt und nicht viel zu gross ist. */
 }
 
+/* Comment Nina: Überschrift 2 (h2) als Standard für die ganze Webseite definiert: Farbe, Schriftart, sowie Umrandung. */
 .my-header2 {
     color: rgb(241, 22, 212);
     font-size: 30px;
