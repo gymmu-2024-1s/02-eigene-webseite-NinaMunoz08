@@ -10,9 +10,9 @@ body {
     margin-bottom: 90px;
     margin-left: 50px;
     margin-right: 50px;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
-    border-color: pink;
+    border-color: rgb(241, 22, 212);
     background-color: burlywood;
 }
 
@@ -41,4 +41,5 @@ body {
 .my-header2 {
     color: rgb(241, 22, 212);
     font-size: 30px;
+    border: 1px solid rgb(241, 22, 212);
 }
