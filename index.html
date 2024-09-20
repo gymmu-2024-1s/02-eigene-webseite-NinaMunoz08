@@ -16,7 +16,9 @@
             <!-- Im header wird der Kopf der Webseite angegeben.
             Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
             ganz oben angezeigt wird, braucht es noch das richtige CSS dafür. -->
-            <h1>Webseite von ...</h1>
+            <h1 style="font-family:'Trebuchet MS';  color:rgb(72, 8, 234); font-size: 60px;text-decoration:underline;text-decoration-style:wavy">Webseite von Nina</h1>
+            <!-- Im header kann die Schriftart, die Farbe, die Schriftgrösse spezifiziert werden. -->
+            </h1>
         </header>
 
         <nav>
@@ -24,10 +26,18 @@
             denen man auf Unterwebseiten kommt. 
             Dieses Element wird oft in den Header gesetzt, kann aber auch auf
             der linken oder rechten Seite verwendet werden. -->
+            
+            <!-- Comment Nina: 3 Unterseiten eingefügt für Hobbies, Schule und Nationalitäten. -->
 
             <ul>
                 <li>
                     <a href="./pages/hobbies.html">Hobbies</a>
+                </li>
+                <li>
+                    <a href="./pages/schule.html">Schule</a>
+                </li>
+                <li>
+                    <a href="./pages/nationalitäten.html">Nationalitäten</a>
                 </li>
             </ul>
         </nav>
@@ -38,49 +48,64 @@
             unterteilt. -->
 
             <section>
-                <!-- Dieses Element wird verwendet um einen Abschnitt auf der
-                Webseite vom Rest abzutrennen. Für Abschnitte in einem Text
-                verwendet man das p-Element. -->
-                <h2>Erster Abschnitt</h2>
+                <!-- Commet Nina: Überschrift 2 "h2" seitenübergreifend als Standard-Klasse definiert in style.css. Weiter auf der Hauptseite 3 Abschnitte definiert  -->
+                <h2 class="my-header2">Das bin ich</h2>
                 <p>
                     <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
                     ein. Das p-Element hat meistens nur noch Text, Links oder
                     Bilder drin, sonst keine weiteren Elemente. -->
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-                    itaque eaque vel necessitatibus amet consectetur corrupti
-                    repudiandae ipsam aliquam sint.
+                    Herzlich willkommen auf meiner Website. Nun werde ich mich
+                    kurz vorstellen.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                    natus magni non cumque voluptatum similique ullam
-                    temporibus. Magni sequi sunt temporibus ab a nobis quo non,
-                    molestias sapiente dolorum repellendus obcaecati odit, dolor
-                    quae illo ratione, veniam autem id praesentium. Consectetur,
-                    totam asperiores expedita culpa doloribus nesciunt error
-                    architecto dolorum!
+                    Ich bin Nina Munoz und bin 16 Jahre alt. Ich wohne in
+                    Muttenz und habe einen jüngeren Bruder.
+                </p>
+                <p>
+                    Ausserdem habe ich zwei Haustiere. Sie heissen Runa und Lulu.
                 </p>
             </section>
 
             <section>
-                <h2>Abschnitt mit Text und Bild</h2>
+                <h2 class="my-header2">Meine Lieblingsferiendestination</h2>
                 <div class="text-and-img">
                     <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
                     Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
                     verwendet, damit wir den Effekt von einem Text neben einem Bild
                     einfach hinbekommen können. -->
                     <div class="text">
-                        Hier ist eine Beschreibung von dem Bild, oder einfach
-                        Text der dazu passen könnte.
+                        Ich gehe am liebsten nach Sardinien in die Ferien. Mein
+                        Lieblingsort in Sardinien ist Olbia, da es dort sehr
+                        schöne Sandstrände gibt. Zudem mag ich das subtropische
+                        Klima welches dort herrscht. Zusammenfassend verbinde
+                        ich diesen Ort mit schönen Erinnerungen.
                     </div>
                     <div class="image">
-                        <img src="/img/mountains.png" alt="" />
+                        <img
+                            src="https://www.sardegnaturismo.it/sites/default/files/styles/larghezza_contenitore/public/galleria/006_spiaggia_capriccioli_arzachena_10_tn.jpg?itok=wZ5RWccd"
+                            alt=""
+                        />
                     </div>
                 </div>
             </section>
+        
         </main>
+        <!-- SVG Code kopiert auf: https://gymmu.github.io/gym-inf/svg-animation -->
+        <svg width="300" height="300">
+            <rect x="100" y="100" width="80" height="80"  fill="blue"/>
+            
+    <path id="circle-motion" d="M 50 150 L 250 150 L 150 50 L 100 50 L 200 50 Z" stroke="none" fill="black" />
+    <circle r="20" fill="white">
+      <animateMotion dur="5s" repeatCount="indefinite">
+        <mpath xlink:href="#circle-motion"/>
+      </animateMotion>
+    </circle>
 
+        </svg>
         <footer>
             <!-- Hier kommt die Fusszeile der Webseite -->
+             Copyright 2024 Nina Munoz
         </footer>
+    
     </body>
 </html>
